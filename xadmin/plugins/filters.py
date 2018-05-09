@@ -124,7 +124,7 @@ class FilterPlugin(BaseAdminPlugin):
 
                     if len(field_parts) > 1:
                         # Add related model name to title
-                        spec.title = "%s %s" % (field_parts[-2].name, spec.title)
+                        spec.title = "%s %s" % (field_parts[-2].verbose_name, spec.title)
 
                     # Check if we need to use distinct()
                     use_distinct = (use_distinct or
